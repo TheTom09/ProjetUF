@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		EAC1B3112471810D00BBC331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC1B3102471810D00BBC331 /* Assets.xcassets */; };
 		EAC1B3142471810D00BBC331 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC1B3132471810D00BBC331 /* Preview Assets.xcassets */; };
 		EAC1B3172471810D00BBC331 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC1B3152471810D00BBC331 /* LaunchScreen.storyboard */; };
+		EAC1B31F247184F300BBC331 /* home.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC1B31E247184F300BBC331 /* home.swift */; };
+		EAC1B3232473063A00BBC331 /* connexion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC1B3222473063A00BBC331 /* connexion.swift */; };
+		EAC1B32A24731C9900BBC331 /* Model in Frameworks */ = {isa = PBXBuildFile; productRef = EAC1B32924731C9900BBC331 /* Model */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		EAC1B3132471810D00BBC331 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EAC1B3162471810D00BBC331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAC1B3182471810D00BBC331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAC1B31E247184F300BBC331 /* home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home.swift; sourceTree = "<group>"; };
+		EAC1B3222473063A00BBC331 /* connexion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = connexion.swift; sourceTree = "<group>"; };
+		EAC1B32524731B2B00BBC331 /* Package */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Package; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAC1B32A24731C9900BBC331 /* Model in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +47,10 @@
 		EAC1B2FE2471810900BBC331 = {
 			isa = PBXGroup;
 			children = (
+				EAC1B32524731B2B00BBC331 /* Package */,
 				EAC1B3092471810900BBC331 /* uf */,
 				EAC1B3082471810900BBC331 /* Products */,
+				EAC1B32824731C9900BBC331 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +65,7 @@
 		EAC1B3092471810900BBC331 /* uf */ = {
 			isa = PBXGroup;
 			children = (
+				EAC1B3242473065600BBC331 /* Views */,
 				EAC1B30A2471810900BBC331 /* AppDelegate.swift */,
 				EAC1B30C2471810900BBC331 /* SceneDelegate.swift */,
 				EAC1B30E2471810900BBC331 /* ContentView.swift */,
@@ -75,6 +85,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		EAC1B3242473065600BBC331 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EAC1B3222473063A00BBC331 /* connexion.swift */,
+				EAC1B31E247184F300BBC331 /* home.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EAC1B32824731C9900BBC331 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,8 +115,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				EAC1B32724731C9200BBC331 /* PBXTargetDependency */,
 			);
 			name = uf;
+			packageProductDependencies = (
+				EAC1B32924731C9900BBC331 /* Model */,
+			);
 			productName = uf;
 			productReference = EAC1B3072471810900BBC331 /* uf.app */;
 			productType = "com.apple.product-type.application";
@@ -147,12 +177,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAC1B30B2471810900BBC331 /* AppDelegate.swift in Sources */,
+				EAC1B3232473063A00BBC331 /* connexion.swift in Sources */,
 				EAC1B30D2471810900BBC331 /* SceneDelegate.swift in Sources */,
+				EAC1B31F247184F300BBC331 /* home.swift in Sources */,
 				EAC1B30F2471810900BBC331 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAC1B32724731C9200BBC331 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = EAC1B32624731C9200BBC331 /* Model */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EAC1B3152471810D00BBC331 /* LaunchScreen.storyboard */ = {
@@ -342,6 +381,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EAC1B32624731C9200BBC331 /* Model */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Model;
+		};
+		EAC1B32924731C9900BBC331 /* Model */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Model;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EAC1B2FF2471810900BBC331 /* Project object */;
 }
