@@ -14,8 +14,15 @@ public struct Agency {
   /// Nom de l'agence
   public let name: String
   /// Localisation de l'agence
-  public let localisation: String
+  public let location: String
   /// Numéro de l'agence
   public let phone: String
+  
+  public init(id: Int, name: String, location: String, phone: String) {
+    self.id = id
+    self.name = name
+    self.location = location
+    self.phone = phone
+  }
 }
 

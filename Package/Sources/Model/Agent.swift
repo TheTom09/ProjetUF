@@ -17,4 +17,11 @@ public struct Agent {
   public let name: String
   //// Numéro de l'agent
   public let phone: String
+  
+  public init(id: Int, agencyId: Int, name: String, phone: String) {
+    self.id = id
+    self.agencyId = agencyId
+    self.name = name
+    self.phone = phone
+  }
 }

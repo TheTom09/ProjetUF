@@ -11,4 +11,8 @@ import Foundation
 public struct Admin {
   /// Id de l'admministrateur
   public let id: Int
+  
+  public init(id: Int) {
+    self.id = id
+  }
 }

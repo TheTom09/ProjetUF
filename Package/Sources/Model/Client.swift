@@ -19,6 +19,14 @@ public struct Client {
   public let phone: String
   /// Date de naissance du client
   public let birthdate: Date
+  
+  public init(id: Int, name: String, email: String, phone: String, birthdate: Date) {
+    self.id = id
+    self.name = name
+    self.email = email
+    self.phone = phone
+    self.birthdate = birthdate
+  }
 }
 
 
