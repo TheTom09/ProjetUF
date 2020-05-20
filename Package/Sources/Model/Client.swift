@@ -8,9 +8,9 @@
 import Foundation
 
 /// Représente le client et ses propriétés
-public struct Client {
+public struct Client: Codable {
   /// Id du client
-  public let id: Int
+  public var id: Int?
   /// Nom du client
   public let name: String
   /// Mail du client
@@ -20,7 +20,7 @@ public struct Client {
   /// Date de naissance du client
   public let birthdate: Date
   
-  public init(id: Int, name: String, email: String, phone: String, birthdate: Date) {
+  public init(id: Int?, name: String, email: String, phone: String, birthdate: Date) {
     self.id = id
     self.name = name
     self.email = email

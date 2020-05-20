@@ -10,9 +10,6 @@ import SwiftUI
 import Model
 
 class LoginViewModel: ObservableObject {
-  let agency = Agency(id: 0, name: "Tom", location: "Aix en privence", phone: "060606060")
-  
-  
   let title = "Connexion"
   let emailPlaceholder = "Email"
   let passwordPlaceholder = "Mot de passe"
@@ -22,7 +19,7 @@ class LoginViewModel: ObservableObject {
   let goodPassword = "bbb"
   
   let errorMessage = "L'email ou le mot de passe est invalide."
-  
+
   var onSuccess: () -> Void
 
   var email = "" {

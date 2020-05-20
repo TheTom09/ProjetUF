@@ -20,7 +20,7 @@ struct ContentView: View {
           self.isLogged = true
         }))
       } else {
-        HomeView()
+        AgenciesView(viewModel: AgenciesViewModel())
       }
     }.navigationViewStyle(StackNavigationViewStyle())
   }

@@ -8,11 +8,11 @@
 import Foundation
 
 /// Représente l'administrateur et ses propriétés
-public struct Admin {
+public struct Admin: Codable {
   /// Id de l'admministrateur
-  public let id: Int
+  public var id: Int?
   
-  public init(id: Int) {
+  public init(id: Int?) {
     self.id = id
   }
 }

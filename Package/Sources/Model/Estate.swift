@@ -8,9 +8,9 @@
 import Foundation
 
 /// Représente une propriété et ses informations
-public struct Estate {
+public struct Estate: Codable, Identifiable {
   /// Id du bien
-  public let id: Int
+  public var id: Int?
   /// Id de l'agence du bien
   public let agencyId: Int
   /// Id du client du bien
@@ -36,7 +36,7 @@ public struct Estate {
   /// Frais d'agence
   public let fees: Int
   
-  public init(id: Int,
+  public init(id: Int?,
               agencyId: Int,
               clientId: Int,
               type: EstateType,
@@ -66,12 +66,12 @@ public struct Estate {
 }
 
 /// Représente les types de la propriété
-public enum EstateType {
+public enum EstateType: String, Codable {
   case apartment
   case house
 }
 /// Représente les types des dépendances
-public enum EstateOutbuilding {
+public enum EstateOutbuilding: String, Codable {
   case garden
   case garage
   case basement

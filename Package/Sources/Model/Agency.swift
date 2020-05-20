@@ -8,9 +8,9 @@
 import Foundation
 
 /// Représente une agence et ses propriétés
-public struct Agency {
+public struct Agency: Codable, Identifiable {
   /// Id de l'agence
-  public let id: Int
+  public var id: Int?
   /// Nom de l'agence
   public let name: String
   /// Localisation de l'agence
@@ -18,7 +18,7 @@ public struct Agency {
   /// Numéro de l'agence
   public let phone: String
   
-  public init(id: Int, name: String, location: String, phone: String) {
+  public init(id: Int?, name: String, location: String, phone: String) {
     self.id = id
     self.name = name
     self.location = location
