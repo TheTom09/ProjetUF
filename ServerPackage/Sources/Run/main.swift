@@ -9,5 +9,6 @@
 // swift run
 
 import App
+import SQLite
 
 try app(.detect()).run()

@@ -66,14 +66,14 @@ public struct Estate: Codable, Identifiable {
 }
 
 /// Représente les types de la propriété
-public enum EstateType: String, Codable {
-  case apartment
-  case house
+public enum EstateType: Int, Codable {
+  case apartment = 0
+  case house = 1
 }
 /// Représente les types des dépendances
-public enum EstateOutbuilding: String, Codable {
-  case garden
-  case garage
-  case basement
+public enum EstateOutbuilding: Int, Codable {
+  case garden = 0
+  case garage = 1
+  case basement = 2
 }
 

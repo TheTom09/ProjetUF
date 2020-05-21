@@ -16,7 +16,6 @@
 		EA376C45247344C10005822C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA376C44247344C10005822C /* HomeView.swift */; };
 		EA376C49247349190005822C /* AgenciesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA376C48247349190005822C /* AgenciesViewModel.swift */; };
 		EA376C4C24734A4D0005822C /* AgenciesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA376C4B24734A4D0005822C /* AgenciesView.swift */; };
-		EA8D6DDE2475E18F00CF9AA7 /* Server in Frameworks */ = {isa = PBXBuildFile; productRef = EA8D6DDD2475E18F00CF9AA7 /* Server */; };
 		EAA96E24247332B20001252A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA96E23247332B20001252A /* LoginView.swift */; };
 		EAA96E27247338AC0001252A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA96E26247338AC0001252A /* LoginViewModel.swift */; };
 		EAA96E2A2473393C0001252A /* Binding+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA96E292473393C0001252A /* Binding+Helpers.swift */; };
@@ -29,18 +28,6 @@
 		EAC1B32A24731C9900BBC331 /* Model in Frameworks */ = {isa = PBXBuildFile; productRef = EAC1B32924731C9900BBC331 /* Model */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		EA8D6DD22475E0ED00CF9AA7 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		EA0670562475C7EF00946870 /* AgencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyView.swift; sourceTree = "<group>"; };
 		EA0670582475C83000946870 /* AgencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyViewModel.swift; sourceTree = "<group>"; };
@@ -52,7 +39,6 @@
 		EA376C48247349190005822C /* AgenciesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgenciesViewModel.swift; sourceTree = "<group>"; };
 		EA376C4B24734A4D0005822C /* AgenciesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgenciesView.swift; sourceTree = "<group>"; };
 		EA8D6DCF2475DE5200CF9AA7 /* ServerPackage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ServerPackage; sourceTree = "<group>"; };
-		EA8D6DD42475E0ED00CF9AA7 /* uf-server */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "uf-server"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA96E23247332B20001252A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EAA96E26247338AC0001252A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		EAA96E292473393C0001252A /* Binding+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Helpers.swift"; sourceTree = "<group>"; };
@@ -68,14 +54,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EA8D6DD12475E0ED00CF9AA7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EA8D6DDE2475E18F00CF9AA7 /* Server in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EAC1B3042471810900BBC331 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				EAC1B3072471810900BBC331 /* uf.app */,
-				EA8D6DD42475E0ED00CF9AA7 /* uf-server */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,27 +168,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EA8D6DD32475E0ED00CF9AA7 /* uf-server */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EA8D6DDA2475E0ED00CF9AA7 /* Build configuration list for PBXNativeTarget "uf-server" */;
-			buildPhases = (
-				EA8D6DD02475E0ED00CF9AA7 /* Sources */,
-				EA8D6DD12475E0ED00CF9AA7 /* Frameworks */,
-				EA8D6DD22475E0ED00CF9AA7 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EA8D6DDC2475E18800CF9AA7 /* PBXTargetDependency */,
-			);
-			name = "uf-server";
-			packageProductDependencies = (
-				EA8D6DDD2475E18F00CF9AA7 /* Server */,
-			);
-			productName = "uf-server";
-			productReference = EA8D6DD42475E0ED00CF9AA7 /* uf-server */;
-			productType = "com.apple.product-type.tool";
-		};
 		EAC1B3062471810900BBC331 /* uf */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAC1B31B2471810D00BBC331 /* Build configuration list for PBXNativeTarget "uf" */;
@@ -243,9 +199,6 @@
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Thomas Leydet";
 				TargetAttributes = {
-					EA8D6DD32475E0ED00CF9AA7 = {
-						CreatedOnToolsVersion = 11.4.1;
-					};
 					EAC1B3062471810900BBC331 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
@@ -265,7 +218,6 @@
 			projectRoot = "";
 			targets = (
 				EAC1B3062471810900BBC331 /* uf */,
-				EA8D6DD32475E0ED00CF9AA7 /* uf-server */,
 			);
 		};
 /* End PBXProject section */
@@ -284,13 +236,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EA8D6DD02475E0ED00CF9AA7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EAC1B3032471810900BBC331 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -316,10 +261,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EA8D6DDC2475E18800CF9AA7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = EA8D6DDB2475E18800CF9AA7 /* Server */;
-		};
 		EAC1B32724731C9200BBC331 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = EAC1B32624731C9200BBC331 /* Model */;
@@ -338,36 +279,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EA8D6DD82475E0ED00CF9AA7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "uf-server/uf-server.entitlements";
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CPE39ZT2AY;
-				ENABLE_HARDENED_RUNTIME = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		EA8D6DD92475E0ED00CF9AA7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "uf-server/uf-server.entitlements";
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CPE39ZT2AY;
-				ENABLE_HARDENED_RUNTIME = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		EAC1B3192471810D00BBC331 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -525,15 +436,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EA8D6DDA2475E0ED00CF9AA7 /* Build configuration list for PBXNativeTarget "uf-server" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EA8D6DD82475E0ED00CF9AA7 /* Debug */,
-				EA8D6DD92475E0ED00CF9AA7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		EAC1B3022471810900BBC331 /* Build configuration list for PBXProject "uf" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -555,14 +457,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EA8D6DDB2475E18800CF9AA7 /* Server */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Server;
-		};
-		EA8D6DDD2475E18F00CF9AA7 /* Server */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Server;
-		};
 		EAC1B32624731C9200BBC331 /* Model */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Model;
