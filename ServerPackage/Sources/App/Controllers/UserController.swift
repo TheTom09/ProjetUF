@@ -42,4 +42,14 @@ struct UserController {
       .filter(\.agencyId, .equal, try req.parameters.next(Int.self))
       .all()
   }
+  
+  func login(req: Request) throws -> Future<User> {
+    try req.content.decode(LoginRequest.self).flatMap { loginRequest in
+      User.authenticate(username: loginRequest.email,
+                        password: loginRequest.password,
+                        using: BCryptDigest(),
+                        on: req)
+        .unwrap(or: Abort(.badRequest))
+    }
+  }
 }

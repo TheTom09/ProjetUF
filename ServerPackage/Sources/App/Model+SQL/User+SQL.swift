@@ -21,5 +21,3 @@ extension User: PasswordAuthenticatable {
   public static let usernameKey: UsernameKey = \.email
   public static var passwordKey: PasswordKey = \.password
 }
-
-extension User: SessionAuthenticatable { }

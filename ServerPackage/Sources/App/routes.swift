@@ -29,6 +29,6 @@ public func routes(_ router: Router) throws {
   router.post("user", use: userController.postUser)
   router.delete("user", Int.parameter, use: userController.deleteUser)
   router.get("agency", Int.parameter, "agents", use: userController.getAgentsFromAgency)
-  
+  router.post("login", use: userController.login)
 }
 
