@@ -36,8 +36,13 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
   static var previews: some View {
-    LoginView(viewModel: LoginViewModel(onSuccess: { }))
-      .colorScheme(.light)
-      .previewLayout(.sizeThatFits)
+    Group {
+      LoginView(viewModel: LoginViewModel(service: LoginServiceSuccess(), onSuccess: { _ in }))
+        .colorScheme(.light)
+        .previewLayout(.sizeThatFits)
+      LoginView(viewModel: LoginViewModel(service: LoginServiceError(), onSuccess: { _ in }))
+        .colorScheme(.light)
+        .previewLayout(.sizeThatFits)
+    }
   }
 }

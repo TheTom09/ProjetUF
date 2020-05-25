@@ -8,6 +8,7 @@
 
 import SwiftUI
 import Model
+import Combine
 
 class LoginViewModel: ObservableObject {
   let title = "Connexion"
@@ -20,7 +21,10 @@ class LoginViewModel: ObservableObject {
   
   let errorMessage = "L'email ou le mot de passe est invalide."
 
-  var onSuccess: () -> Void
+  let service: LoginService
+  var onSuccess: (User) -> Void
+  
+  var currentRequest: AnyCancellable?
 
   var email = "" {
     didSet { self.objectWillChange.send() }
@@ -32,18 +36,22 @@ class LoginViewModel: ObservableObject {
     didSet { self.objectWillChange.send() }
   }
   
-  init(onSuccess: @escaping () -> Void) {
+  init(service: LoginService = LoginServiceImpl(), onSuccess: @escaping (User) -> Void) {
+    self.service = service
     self.onSuccess = onSuccess
   }
   
   func login() {
-    if self.email == self.goodEmail && self.password == self.goodPassword {
-      self.error = false
-      self.onSuccess()
-    } else {
-      self.email = ""
-      self.password = ""
-      self.error = true
+    self.currentRequest = self.service.login(email: self.email, password: self.password).sink { result in
+      switch result {
+      case let .success(user):
+        self.error = false
+        self.onSuccess(user)
+      case .failure:
+        self.email = ""
+        self.password = ""
+        self.error = true
+      }
     }
   }
 }

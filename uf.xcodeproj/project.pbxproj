@@ -13,7 +13,15 @@
 		EA06705E2475CBD500946870 /* EstateListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06705D2475CBD500946870 /* EstateListViewModel.swift */; };
 		EA0670602475D26500946870 /* EstateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06705F2475D26500946870 /* EstateView.swift */; };
 		EA0670622475D28000946870 /* EstateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0670612475D28000946870 /* EstateViewModel.swift */; };
-		EA376C45247344C10005822C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA376C44247344C10005822C /* HomeView.swift */; };
+		EA193578247C830900D064EC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EA193577247C830900D064EC /* Alamofire */; };
+		EA19357A247C832000D064EC /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA193579247C832000D064EC /* LoginService.swift */; };
+		EA19357C247C879A00D064EC /* DataRequest+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA19357B247C879A00D064EC /* DataRequest+Helpers.swift */; };
+		EA19357E247C895100D064EC /* ServerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA19357D247C895100D064EC /* ServerConfig.swift */; };
+		EA193581247C8A1600D064EC /* AdminHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA193580247C8A1600D064EC /* AdminHomeViewModel.swift */; };
+		EA193584247C8B5000D064EC /* AgentHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA193583247C8B5000D064EC /* AgentHomeView.swift */; };
+		EA193586247C8B5C00D064EC /* AgentHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA193585247C8B5C00D064EC /* AgentHomeViewModel.swift */; };
+		EA193588247C90AF00D064EC /* User+Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA193587247C90AF00D064EC /* User+Example.swift */; };
+		EA376C45247344C10005822C /* AdminHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA376C44247344C10005822C /* AdminHomeView.swift */; };
 		EA376C49247349190005822C /* AgenciesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA376C48247349190005822C /* AgenciesViewModel.swift */; };
 		EA376C4C24734A4D0005822C /* AgenciesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA376C4B24734A4D0005822C /* AgenciesView.swift */; };
 		EAA96E24247332B20001252A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA96E23247332B20001252A /* LoginView.swift */; };
@@ -35,10 +43,16 @@
 		EA06705D2475CBD500946870 /* EstateListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstateListViewModel.swift; sourceTree = "<group>"; };
 		EA06705F2475D26500946870 /* EstateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstateView.swift; sourceTree = "<group>"; };
 		EA0670612475D28000946870 /* EstateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstateViewModel.swift; sourceTree = "<group>"; };
-		EA376C44247344C10005822C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EA193579247C832000D064EC /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		EA19357B247C879A00D064EC /* DataRequest+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataRequest+Helpers.swift"; sourceTree = "<group>"; };
+		EA19357D247C895100D064EC /* ServerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConfig.swift; sourceTree = "<group>"; };
+		EA193580247C8A1600D064EC /* AdminHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeViewModel.swift; sourceTree = "<group>"; };
+		EA193583247C8B5000D064EC /* AgentHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentHomeView.swift; sourceTree = "<group>"; };
+		EA193585247C8B5C00D064EC /* AgentHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentHomeViewModel.swift; sourceTree = "<group>"; };
+		EA193587247C90AF00D064EC /* User+Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Example.swift"; sourceTree = "<group>"; };
+		EA376C44247344C10005822C /* AdminHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeView.swift; sourceTree = "<group>"; };
 		EA376C48247349190005822C /* AgenciesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgenciesViewModel.swift; sourceTree = "<group>"; };
 		EA376C4B24734A4D0005822C /* AgenciesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgenciesView.swift; sourceTree = "<group>"; };
-		EA8D6DCF2475DE5200CF9AA7 /* ServerPackage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ServerPackage; sourceTree = "<group>"; };
 		EAA96E23247332B20001252A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EAA96E26247338AC0001252A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		EAA96E292473393C0001252A /* Binding+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Helpers.swift"; sourceTree = "<group>"; };
@@ -59,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAC1B32A24731C9900BBC331 /* Model in Frameworks */,
+				EA193578247C830900D064EC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +89,33 @@
 				EA0670612475D28000946870 /* EstateViewModel.swift */,
 			);
 			path = Estate;
+			sourceTree = "<group>";
+		};
+		EA19357F247C89F500D064EC /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				EA376C44247344C10005822C /* AdminHomeView.swift */,
+				EA193580247C8A1600D064EC /* AdminHomeViewModel.swift */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		EA193582247C8B4000D064EC /* Agent */ = {
+			isa = PBXGroup;
+			children = (
+				EA193583247C8B5000D064EC /* AgentHomeView.swift */,
+				EA193585247C8B5C00D064EC /* AgentHomeViewModel.swift */,
+			);
+			path = Agent;
+			sourceTree = "<group>";
+		};
+		EA193589247C915200D064EC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EA19357F247C89F500D064EC /* Admin */,
+				EA193582247C8B4000D064EC /* Agent */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		EA376C4A247349220005822C /* Agencies */ = {
@@ -92,6 +134,7 @@
 			children = (
 				EAA96E23247332B20001252A /* LoginView.swift */,
 				EAA96E26247338AC0001252A /* LoginViewModel.swift */,
+				EA193579247C832000D064EC /* LoginService.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -100,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				EAA96E292473393C0001252A /* Binding+Helpers.swift */,
+				EA19357B247C879A00D064EC /* DataRequest+Helpers.swift */,
+				EA193587247C90AF00D064EC /* User+Example.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -107,7 +152,6 @@
 		EAC1B2FE2471810900BBC331 = {
 			isa = PBXGroup;
 			children = (
-				EA8D6DCF2475DE5200CF9AA7 /* ServerPackage */,
 				EAC1B32524731B2B00BBC331 /* Package */,
 				EAC1B3092471810900BBC331 /* uf */,
 				EAC1B3082471810900BBC331 /* Products */,
@@ -130,6 +174,7 @@
 				EAC1B3242473065600BBC331 /* Views */,
 				EAC1B30A2471810900BBC331 /* AppDelegate.swift */,
 				EAC1B30C2471810900BBC331 /* SceneDelegate.swift */,
+				EA19357D247C895100D064EC /* ServerConfig.swift */,
 				EAC1B3102471810D00BBC331 /* Assets.xcassets */,
 				EAC1B3152471810D00BBC331 /* LaunchScreen.storyboard */,
 				EAC1B3182471810D00BBC331 /* Info.plist */,
@@ -150,7 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				EAC1B30E2471810900BBC331 /* ContentView.swift */,
-				EA376C44247344C10005822C /* HomeView.swift */,
+				EA193589247C915200D064EC /* Home */,
 				EA06705A2475CB3000946870 /* Estate */,
 				EAA96E25247338A00001252A /* Login */,
 				EA376C4A247349220005822C /* Agencies */,
@@ -184,6 +229,7 @@
 			name = uf;
 			packageProductDependencies = (
 				EAC1B32924731C9900BBC331 /* Model */,
+				EA193577247C830900D064EC /* Alamofire */,
 			);
 			productName = uf;
 			productReference = EAC1B3072471810900BBC331 /* uf.app */;
@@ -213,6 +259,9 @@
 				Base,
 			);
 			mainGroup = EAC1B2FE2471810900BBC331;
+			packageReferences = (
+				EA193576247C830900D064EC /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = EAC1B3082471810900BBC331 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -240,19 +289,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA193581247C8A1600D064EC /* AdminHomeViewModel.swift in Sources */,
 				EA06705C2475CBBE00946870 /* EstateListView.swift in Sources */,
 				EAC1B30B2471810900BBC331 /* AppDelegate.swift in Sources */,
 				EA06705E2475CBD500946870 /* EstateListViewModel.swift in Sources */,
-				EA376C45247344C10005822C /* HomeView.swift in Sources */,
+				EA193586247C8B5C00D064EC /* AgentHomeViewModel.swift in Sources */,
+				EA19357C247C879A00D064EC /* DataRequest+Helpers.swift in Sources */,
+				EA19357E247C895100D064EC /* ServerConfig.swift in Sources */,
+				EA376C45247344C10005822C /* AdminHomeView.swift in Sources */,
 				EA0670592475C83000946870 /* AgencyViewModel.swift in Sources */,
 				EAC1B30D2471810900BBC331 /* SceneDelegate.swift in Sources */,
 				EA376C49247349190005822C /* AgenciesViewModel.swift in Sources */,
+				EA19357A247C832000D064EC /* LoginService.swift in Sources */,
 				EAA96E24247332B20001252A /* LoginView.swift in Sources */,
 				EAA96E27247338AC0001252A /* LoginViewModel.swift in Sources */,
+				EA193584247C8B5000D064EC /* AgentHomeView.swift in Sources */,
 				EAC1B30F2471810900BBC331 /* ContentView.swift in Sources */,
 				EA0670622475D28000946870 /* EstateViewModel.swift in Sources */,
 				EAA96E2A2473393C0001252A /* Binding+Helpers.swift in Sources */,
 				EA376C4C24734A4D0005822C /* AgenciesView.swift in Sources */,
+				EA193588247C90AF00D064EC /* User+Example.swift in Sources */,
 				EA0670602475D26500946870 /* EstateView.swift in Sources */,
 				EA0670572475C7EF00946870 /* AgencyView.swift in Sources */,
 			);
@@ -456,7 +512,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		EA193576247C830900D064EC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		EA193577247C830900D064EC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA193576247C830900D064EC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		EAC1B32624731C9200BBC331 /* Model */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Model;

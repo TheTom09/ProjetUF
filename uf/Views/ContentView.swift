@@ -9,18 +9,23 @@
 import Foundation
 import SwiftUI
 import Combine
+import Model
 
 struct ContentView: View {
-  @State var isLogged = false
+  @State var user: User?
   
   var body: some View {
     NavigationView {
-      if !self.isLogged {
-        LoginView(viewModel: LoginViewModel(onSuccess: {
-          self.isLogged = true
+      if self.user == nil {
+        LoginView(viewModel: LoginViewModel(onSuccess: { user in
+          self.user = user
         }))
+      } else if self.user?.type == .admin {
+        AdminHomeView(viewModel: AdminHomeViewModel(user: self.user!))
+      } else if self.user?.type == .agent {
+        AgentHomeView(viewModel: AgentHomeViewModel(user: self.user!))
       } else {
-        AgenciesView(viewModel: AgenciesViewModel())
+        EmptyView()
       }
     }.navigationViewStyle(StackNavigationViewStyle())
   }
