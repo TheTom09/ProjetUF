@@ -20,7 +20,8 @@ extension Agency: Model, Content, Migration {
   public var estate: Children<Agency, Estate> {
     children(\.agencyId)
   }
-  public var agents: Children<Agency, Agent> {
+  
+  public var agents: Children<Agency, User> {
     children(\.agencyId)
   }
 }

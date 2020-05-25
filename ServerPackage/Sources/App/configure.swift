@@ -9,6 +9,7 @@ import Model
 import Vapor
 import SQLite
 import FluentSQLite
+import Authentication
 
 /// Called before your application initializes.
 public func configure(_ config: inout Config, _ env: inout Environment, _ services: inout Services) throws {
@@ -22,16 +23,17 @@ public func configure(_ config: inout Config, _ env: inout Environment, _ servic
   databases.add(database: sqlite, as: .sqlite)
   services.register(databases)
   
+  // Configure the authentication provider
+  try services.register(AuthenticationProvider())
+  
   /// Register routes to the router
    let router = EngineRouter.default()
    try routes(router)
    services.register(router, as: Router.self)
   
   var migration = MigrationConfig()
-  migration.add(model: Admin.self, database: .sqlite)
   migration.add(model: Agency.self, database: .sqlite)
-  migration.add(model: Agent.self, database: .sqlite)
-  migration.add(model: ClientModel.self, database: .sqlite)
+  migration.add(model: User.self, database: .sqlite)
   migration.add(model: Estate.self, database: .sqlite)
   services.register(migration)
 }

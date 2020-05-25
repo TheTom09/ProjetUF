@@ -17,7 +17,7 @@ extension Estate: Model, Content, Migration {
     \.id
   }
   
-  public var client: Parent<Estate, ClientModel> {
+  public var client: Parent<Estate, User> {
     parent(\.agencyId)
   }
   
