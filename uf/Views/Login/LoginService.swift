@@ -15,7 +15,7 @@ protocol LoginService {
   func login(email: String, password: String) -> ServerResponse<User>
 }
 
-class LoginServiceImpl: LoginService {
+class LoginServiceServer: LoginService {
   func login(email: String, password: String) -> ServerResponse<User> {
     return AF.request(ServerConfig.api + "/login",
                method: .post,
@@ -26,14 +26,14 @@ class LoginServiceImpl: LoginService {
   }
 }
 
-class LoginServiceSuccess: LoginService {
+class LoginServiceExampleSuccess: LoginService {
   func login(email: String, password: String) -> ServerResponse<User> {
     Just(.success(.adminExample))
       .eraseToAnyPublisher()
   }
 }
 
-class LoginServiceError: LoginService {
+class LoginServiceExampleError: LoginService {
   func login(email: String, password: String) -> ServerResponse<User> {
     Just(.failure(ServerError.error))
       .eraseToAnyPublisher()

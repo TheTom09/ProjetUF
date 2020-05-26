@@ -36,7 +36,7 @@ class LoginViewModel: ObservableObject {
     didSet { self.objectWillChange.send() }
   }
   
-  init(service: LoginService = LoginServiceImpl(), onSuccess: @escaping (User) -> Void) {
+  init(service: LoginService = LoginServiceServer(), onSuccess: @escaping (User) -> Void) {
     self.service = service
     self.onSuccess = onSuccess
   }

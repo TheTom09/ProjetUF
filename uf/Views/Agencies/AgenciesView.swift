@@ -9,20 +9,21 @@
 import SwiftUI
 
 struct AgenciesView: View {
-  var viewModel: AgenciesViewModel
+  @ObservedObject var viewModel: AgenciesViewModel
   
   var body: some View {
     List(viewModel.agencies) { agency in
       NavigationLink(destination: AgencyView(viewModel: AgencyViewModel(agency: agency)), label: {
         Text(agency.name)
       })
-    }.navigationBarTitle("Agences")
+    }.navigationBarTitle("Agences").onAppear{
+      self.viewModel.getAgencies()
+    }
   }
 }
 
 struct AgenciesView_Previews: PreviewProvider {
   static var previews: some View {
-    AgenciesView(viewModel: AgenciesViewModel())
-      .colorScheme(.light)
+    AgenciesView(viewModel: AgenciesViewModel(service: AgencyServiceExampleSuccess()))
   }
 }

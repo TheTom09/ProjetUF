@@ -12,7 +12,7 @@ struct AdminHomeView: View {
   @ObservedObject var viewModel: AdminHomeViewModel
   
   var body: some View {
-    Text("Bonjour \(viewModel.user.name) !")
+    AgenciesView(viewModel: AgenciesViewModel())
   }
 }
 

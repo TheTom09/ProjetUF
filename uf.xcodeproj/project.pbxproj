@@ -15,12 +15,14 @@
 		EA0670622475D28000946870 /* EstateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0670612475D28000946870 /* EstateViewModel.swift */; };
 		EA193578247C830900D064EC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EA193577247C830900D064EC /* Alamofire */; };
 		EA19357A247C832000D064EC /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA193579247C832000D064EC /* LoginService.swift */; };
-		EA19357C247C879A00D064EC /* DataRequest+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA19357B247C879A00D064EC /* DataRequest+Helpers.swift */; };
+		EA19357C247C879A00D064EC /* Alamofire+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA19357B247C879A00D064EC /* Alamofire+Helpers.swift */; };
 		EA19357E247C895100D064EC /* ServerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA19357D247C895100D064EC /* ServerConfig.swift */; };
 		EA193581247C8A1600D064EC /* AdminHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA193580247C8A1600D064EC /* AdminHomeViewModel.swift */; };
 		EA193584247C8B5000D064EC /* AgentHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA193583247C8B5000D064EC /* AgentHomeView.swift */; };
 		EA193586247C8B5C00D064EC /* AgentHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA193585247C8B5C00D064EC /* AgentHomeViewModel.swift */; };
 		EA193588247C90AF00D064EC /* User+Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA193587247C90AF00D064EC /* User+Example.swift */; };
+		EA19358C247D410D00D064EC /* AgencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA19358B247D410D00D064EC /* AgencyService.swift */; };
+		EA19358E247D471400D064EC /* Agency+Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA19358D247D471400D064EC /* Agency+Example.swift */; };
 		EA376C45247344C10005822C /* AdminHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA376C44247344C10005822C /* AdminHomeView.swift */; };
 		EA376C49247349190005822C /* AgenciesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA376C48247349190005822C /* AgenciesViewModel.swift */; };
 		EA376C4C24734A4D0005822C /* AgenciesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA376C4B24734A4D0005822C /* AgenciesView.swift */; };
@@ -44,12 +46,15 @@
 		EA06705F2475D26500946870 /* EstateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstateView.swift; sourceTree = "<group>"; };
 		EA0670612475D28000946870 /* EstateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstateViewModel.swift; sourceTree = "<group>"; };
 		EA193579247C832000D064EC /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
-		EA19357B247C879A00D064EC /* DataRequest+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataRequest+Helpers.swift"; sourceTree = "<group>"; };
+		EA19357B247C879A00D064EC /* Alamofire+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alamofire+Helpers.swift"; sourceTree = "<group>"; };
 		EA19357D247C895100D064EC /* ServerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConfig.swift; sourceTree = "<group>"; };
 		EA193580247C8A1600D064EC /* AdminHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeViewModel.swift; sourceTree = "<group>"; };
 		EA193583247C8B5000D064EC /* AgentHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentHomeView.swift; sourceTree = "<group>"; };
 		EA193585247C8B5C00D064EC /* AgentHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentHomeViewModel.swift; sourceTree = "<group>"; };
 		EA193587247C90AF00D064EC /* User+Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Example.swift"; sourceTree = "<group>"; };
+		EA19358A247C926500D064EC /* uf.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = uf.entitlements; sourceTree = "<group>"; };
+		EA19358B247D410D00D064EC /* AgencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyService.swift; sourceTree = "<group>"; };
+		EA19358D247D471400D064EC /* Agency+Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Agency+Example.swift"; sourceTree = "<group>"; };
 		EA376C44247344C10005822C /* AdminHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeView.swift; sourceTree = "<group>"; };
 		EA376C48247349190005822C /* AgenciesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgenciesViewModel.swift; sourceTree = "<group>"; };
 		EA376C4B24734A4D0005822C /* AgenciesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgenciesView.swift; sourceTree = "<group>"; };
@@ -125,6 +130,7 @@
 				EA376C48247349190005822C /* AgenciesViewModel.swift */,
 				EA0670562475C7EF00946870 /* AgencyView.swift */,
 				EA0670582475C83000946870 /* AgencyViewModel.swift */,
+				EA19358B247D410D00D064EC /* AgencyService.swift */,
 			);
 			path = Agencies;
 			sourceTree = "<group>";
@@ -143,7 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				EAA96E292473393C0001252A /* Binding+Helpers.swift */,
-				EA19357B247C879A00D064EC /* DataRequest+Helpers.swift */,
+				EA19357B247C879A00D064EC /* Alamofire+Helpers.swift */,
+				EA19358D247D471400D064EC /* Agency+Example.swift */,
 				EA193587247C90AF00D064EC /* User+Example.swift */,
 			);
 			path = Extensions;
@@ -170,6 +177,7 @@
 		EAC1B3092471810900BBC331 /* uf */ = {
 			isa = PBXGroup;
 			children = (
+				EA19358A247C926500D064EC /* uf.entitlements */,
 				EAA96E282473392D0001252A /* Extensions */,
 				EAC1B3242473065600BBC331 /* Views */,
 				EAC1B30A2471810900BBC331 /* AppDelegate.swift */,
@@ -294,12 +302,14 @@
 				EAC1B30B2471810900BBC331 /* AppDelegate.swift in Sources */,
 				EA06705E2475CBD500946870 /* EstateListViewModel.swift in Sources */,
 				EA193586247C8B5C00D064EC /* AgentHomeViewModel.swift in Sources */,
-				EA19357C247C879A00D064EC /* DataRequest+Helpers.swift in Sources */,
+				EA19358E247D471400D064EC /* Agency+Example.swift in Sources */,
+				EA19357C247C879A00D064EC /* Alamofire+Helpers.swift in Sources */,
 				EA19357E247C895100D064EC /* ServerConfig.swift in Sources */,
 				EA376C45247344C10005822C /* AdminHomeView.swift in Sources */,
 				EA0670592475C83000946870 /* AgencyViewModel.swift in Sources */,
 				EAC1B30D2471810900BBC331 /* SceneDelegate.swift in Sources */,
 				EA376C49247349190005822C /* AgenciesViewModel.swift in Sources */,
+				EA19358C247D410D00D064EC /* AgencyService.swift in Sources */,
 				EA19357A247C832000D064EC /* LoginService.swift in Sources */,
 				EAA96E24247332B20001252A /* LoginView.swift in Sources */,
 				EAA96E27247338AC0001252A /* LoginViewModel.swift in Sources */,
@@ -453,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = uf/uf.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"uf/Preview Content\"";
 				DEVELOPMENT_TEAM = CPE39ZT2AY;
@@ -464,8 +475,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomleydet.uf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -473,6 +485,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = uf/uf.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"uf/Preview Content\"";
 				DEVELOPMENT_TEAM = CPE39ZT2AY;
@@ -484,8 +497,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomleydet.uf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

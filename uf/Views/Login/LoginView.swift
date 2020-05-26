@@ -37,10 +37,10 @@ struct LoginView: View {
 struct LoginView_Previews: PreviewProvider {
   static var previews: some View {
     Group {
-      LoginView(viewModel: LoginViewModel(service: LoginServiceSuccess(), onSuccess: { _ in }))
+      LoginView(viewModel: LoginViewModel(service: LoginServiceExampleSuccess(), onSuccess: { _ in }))
         .colorScheme(.light)
         .previewLayout(.sizeThatFits)
-      LoginView(viewModel: LoginViewModel(service: LoginServiceError(), onSuccess: { _ in }))
+      LoginView(viewModel: LoginViewModel(service: LoginServiceExampleError(), onSuccess: { _ in }))
         .colorScheme(.light)
         .previewLayout(.sizeThatFits)
     }
