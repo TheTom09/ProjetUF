@@ -12,11 +12,11 @@ public struct Agency: Codable, Identifiable {
   /// Id de l'agence
   public var id: Int?
   /// Nom de l'agence
-  public let name: String
+  public var name: String
   /// Localisation de l'agence
-  public let location: String
+  public var location: String
   /// Numéro de l'agence
-  public let phone: String
+  public var phone: String
   
   public init(id: Int?, name: String, location: String, phone: String) {
     self.id = id

@@ -1,5 +1,5 @@
 //
-//  HomeViewModel.swift
+//  AdminHomeViewModel.swift
 //  uf
 //
 //  Created by Thomas Leydet on 26/05/2020.

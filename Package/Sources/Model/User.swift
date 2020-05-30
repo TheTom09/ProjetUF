@@ -8,23 +8,23 @@
 import Foundation
 
 /// Représente un utilisateur et ses propriétés
-public struct User: Codable {
+public struct User: Codable, Identifiable, Hashable {
   /// Id de l'utilisateur
   public var id: Int?
   /// Type de l'utilisateur
-  public let type: UserType
+  public var type: UserType
   /// Nom de l'utilisateur
-  public let name: String
+  public var name: String
   /// Mail de l'utilisateur
   public var email: String
   /// Mot de passe encodé de l'utilisateur
   public var password: String
   /// Numéro de l'utilisateur
-  public let phone: String
+  public var phone: String
   /// Date de naissance de l'utilisateur
-  public let birthdate: Date
+  public var birthdate: Date
   /// Id de l'agence si l'utilisateur est un agent
-  public let agencyId: Int?
+  public var agencyId: Int?
   
   public init(id: Int?,
               type: UserType,
@@ -45,8 +45,14 @@ public struct User: Codable {
   }
 }
 
+extension User: Comparable {
+  public static func < (lhs: User, rhs: User) -> Bool {
+    lhs.id ?? 0 < rhs.id ?? 0
+  }
+}
+
 /// Représente un type d'utilisateur
-public enum UserType: Int, Codable {
+public enum UserType: Int, Codable, CaseIterable {
   case admin = 0
   case agent = 1
   case client = 2

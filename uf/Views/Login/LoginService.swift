@@ -21,7 +21,7 @@ class LoginServiceServer: LoginService {
                method: .post,
                parameters: ["email": email,
                             "password": password],
-               encoder: JSONParameterEncoder.default)
+               encoder: ServerEncoder)
       .serverResponse()
   }
 }

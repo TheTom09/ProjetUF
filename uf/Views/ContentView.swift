@@ -19,6 +19,8 @@ struct ContentView: View {
       if self.user == nil {
         LoginView(viewModel: LoginViewModel(onSuccess: { user in
           self.user = user
+        }, onSignOut: {
+          self.user = nil
         }))
       } else if self.user?.type == .admin {
         AdminHomeView(viewModel: AdminHomeViewModel(user: self.user!))

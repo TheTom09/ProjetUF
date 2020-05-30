@@ -25,3 +25,16 @@ extension Estate: Model, Content, Migration {
     parent(\.agencyId)
   }
 }
+
+extension Estate: Pivot {
+  public typealias Left = Agency
+  public typealias Right = User
+  
+  public static var leftIDKey: LeftIDKey {
+    \.agencyId
+  }
+  
+  public static var rightIDKey: RightIDKey {
+    \.clientId
+  }
+}

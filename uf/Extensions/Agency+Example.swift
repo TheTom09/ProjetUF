@@ -9,6 +9,17 @@
 import Foundation
 import Model
 
+
+extension Agency {
+  static var agencyExample: Agency {
+    Agency(id: 0, name: "Agence Paris", location: "Paris", phone: "06 00 00 00 00")
+  }
+  
+  static var empty: Agency {
+    Agency(id: nil, name: "", location: "", phone: "")
+  }
+}
+
 extension Array where Element == Agency {
   static var agencyListExample: [Agency] { [
       Agency(id: 0, name: "Agence Paris", location: "Paris", phone: "06 00 00 00 00"),

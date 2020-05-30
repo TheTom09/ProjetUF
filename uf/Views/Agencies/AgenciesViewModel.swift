@@ -16,11 +16,16 @@ class AgenciesViewModel: ObservableObject {
   }
   
   let service: AgencyService
+  let currentUser: User
   var currentRequest: AnyCancellable?
   
+  var isEditable: Bool {
+    self.currentUser.type == .admin
+  }
   
-  init(service: AgencyService = AgencyServiceServer()) {
+  init(service: AgencyService = AgencyServiceServer(), currentUser: User) {
     self.service = service
+    self.currentUser = currentUser
   }
   
   func getAgencies() {
@@ -32,5 +37,16 @@ class AgenciesViewModel: ObservableObject {
         break
       }
     }
+  }
+  
+  func delete(indexes: IndexSet) {
+    self.currentRequest = self.service.delete(agency: self.agencies[indexes.first!]).sink(receiveValue: { result in
+      switch result {
+      case .success:
+        self.getAgencies()
+      case .failure:
+        break
+      }
+    })
   }
 }

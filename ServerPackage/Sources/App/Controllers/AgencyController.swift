@@ -15,10 +15,9 @@ struct AgencyController {
     Agency.query(on: req).all()
   }
   
-  func postAgency(req: Request) throws -> Future<HTTPResponseStatus> {
+  func postAgency(req: Request) throws -> Future<Agency> {
     try req.content.decode(Agency.self)
       .save(on: req)
-      .transform(to: HTTPStatus.ok)
   }
   
   func deleteAgency(req: Request) throws -> Future<HTTPResponseStatus> {

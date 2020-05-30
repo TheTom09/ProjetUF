@@ -15,10 +15,9 @@ struct EstateController {
     Estate.query(on: req).all()
   }
   
-  func postEstate(req: Request) throws -> Future<HTTPResponseStatus> {
+  func postEstate(req: Request) throws -> Future<Estate> {
     try req.content.decode(Estate.self)
       .save(on: req)
-      .transform(to: HTTPStatus.ok)
   }
   
   func deleteEstate(req: Request) throws -> Future<HTTPResponseStatus> {
@@ -29,6 +28,7 @@ struct EstateController {
           .transform(to: HTTPStatus.ok)
     }
   }
+  
   func getEstatesFromAgency(req: Request) throws -> Future<[Estate]> {
     Estate.query(on: req).filter(\.agencyId, .equal, try req.parameters.next(Int.self)).all()
   }

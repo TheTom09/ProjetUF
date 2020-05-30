@@ -12,7 +12,14 @@ struct AgentHomeView: View {
   @ObservedObject var viewModel: AgentHomeViewModel
   
   var body: some View {
-    Text("Hello \(viewModel.user.name) !")
+    List {
+      NavigationLink(destination: UsersView(viewModel: UsersViewModel(currentUser: self.viewModel.user)), label: {
+        Text("Clients")
+      })
+      NavigationLink(destination: EstateListView(viewModel: EstateListViewModel(currentUser: self.viewModel.user)), label: {
+        Text("Biens")
+      })
+    }
   }
 }
 

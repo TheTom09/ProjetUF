@@ -8,12 +8,55 @@
 
 import UIKit
 import Model
+import Combine
 
-class EstateListViewModel {
-  let list = [
-    Estate(id: 0, agencyId: 0, clientId: 0, type: .apartment, surface: 10, rooms: 1, floor: 1, location: "Paris", outbuildings: [.basement], minimumPrice: 100, maximumPrice: 200, price: 150, fees: 100),
-    Estate(id: 1, agencyId: 1, clientId: 1, type: .house, surface: 100, rooms: 4, floor: 1, location: "Marseille", outbuildings: [.garden,.garage], minimumPrice: 100000, maximumPrice: 300000, price: 150000, fees: 1000),
-    Estate(id: 2, agencyId: 2, clientId: 2, type: .apartment, surface: 20, rooms: 2, floor: 2, location: "Lyon", outbuildings: [.garage], minimumPrice: 400, maximumPrice: 900, price: 650, fees: 650),
-  ]
+class EstateListViewModel: ObservableObject {
+var estates = [Estate]() {
+  didSet { self.objectWillChange.send() }
+}
   
+  let service: EstateService
+  var currentRequest: AnyCancellable?
+  let currentUser: User
+  
+  init(currentUser: User, service: EstateService = EstateServiceServer()) {
+    self.currentUser = currentUser
+    self.service = service
+  }
+  
+  func newEstate() -> Estate {
+    var estate = Estate.empty
+    if self.currentUser.type == .agent {
+      estate.agencyId = self.currentUser.agencyId!
+    }
+    return estate
+  }
+  
+  func getEstates() {
+    self.currentRequest = self.service.estates().sink { result in
+      switch result {
+      case let .success(estates):
+        if self.currentUser.type == .admin {
+          self.estates = estates
+        } else {
+          self.estates = estates.filter { estate in
+            self.currentUser.agencyId == estate.agencyId
+          }
+        }
+      case .failure:
+        break
+      }
+    }
+  }
+  
+  func deleteEstate(indexes: IndexSet) {
+    self.currentRequest = self.service.delete(estate: self.estates[indexes.first!]).sink { result in
+      switch result {
+      case .success:
+        self.getEstates()
+      case .failure:
+        break
+      }
+    }
+  }
 }

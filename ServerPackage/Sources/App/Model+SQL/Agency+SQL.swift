@@ -24,4 +24,8 @@ extension Agency: Model, Content, Migration {
   public var agents: Children<Agency, User> {
     children(\.agencyId)
   }
+  
+  public var clients: Siblings<Agency, User, Estate> {
+    siblings()
+  }
 }

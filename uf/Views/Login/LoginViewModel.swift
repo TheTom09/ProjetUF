@@ -16,13 +16,11 @@ class LoginViewModel: ObservableObject {
   let passwordPlaceholder = "Mot de passe"
   let actionTitle = "Connexion"
   
-  let goodEmail = "aaa"
-  let goodPassword = "bbb"
-  
   let errorMessage = "L'email ou le mot de passe est invalide."
 
   let service: LoginService
   var onSuccess: (User) -> Void
+  let onSignOut: () -> Void
   
   var currentRequest: AnyCancellable?
 
@@ -36,9 +34,10 @@ class LoginViewModel: ObservableObject {
     didSet { self.objectWillChange.send() }
   }
   
-  init(service: LoginService = LoginServiceServer(), onSuccess: @escaping (User) -> Void) {
+  init(service: LoginService = LoginServiceServer(), onSuccess: @escaping (User) -> Void, onSignOut: @escaping () -> Void) {
     self.service = service
     self.onSuccess = onSuccess
+    self.onSignOut = onSignOut
   }
   
   func login() {

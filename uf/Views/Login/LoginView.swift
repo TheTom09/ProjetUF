@@ -30,17 +30,21 @@ struct LoginView: View {
       }, label: {
         Text(viewModel.actionTitle)
       })
-    }
+    }.navigationBarItems(trailing: Button(action: {
+      self.viewModel.onSignOut()
+    }, label: {
+      Text("Déconnexion")
+    }))
   }
 }
 
 struct LoginView_Previews: PreviewProvider {
   static var previews: some View {
     Group {
-      LoginView(viewModel: LoginViewModel(service: LoginServiceExampleSuccess(), onSuccess: { _ in }))
+      LoginView(viewModel: LoginViewModel(service: LoginServiceExampleSuccess(), onSuccess: { _ in }, onSignOut: { }))
         .colorScheme(.light)
         .previewLayout(.sizeThatFits)
-      LoginView(viewModel: LoginViewModel(service: LoginServiceExampleError(), onSuccess: { _ in }))
+      LoginView(viewModel: LoginViewModel(service: LoginServiceExampleError(), onSuccess: { _ in }, onSignOut: { }))
         .colorScheme(.light)
         .previewLayout(.sizeThatFits)
     }

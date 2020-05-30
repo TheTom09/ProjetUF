@@ -23,12 +23,27 @@
 		EA193588247C90AF00D064EC /* User+Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA193587247C90AF00D064EC /* User+Example.swift */; };
 		EA19358C247D410D00D064EC /* AgencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA19358B247D410D00D064EC /* AgencyService.swift */; };
 		EA19358E247D471400D064EC /* Agency+Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA19358D247D471400D064EC /* Agency+Example.swift */; };
+		EA193590247D7C4B00D064EC /* Estate+Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA19358F247D7C4B00D064EC /* Estate+Example.swift */; };
+		EA193592247D920F00D064EC /* AdminService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA193591247D920F00D064EC /* AdminService.swift */; };
+		EA193594247DA77A00D064EC /* EstateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA193593247DA77A00D064EC /* EstateService.swift */; };
+		EA193596247DB6FB00D064EC /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA193595247DB6FB00D064EC /* Cell.swift */; };
+		EA193598247DBC6400D064EC /* EstateType+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA193597247DBC6400D064EC /* EstateType+String.swift */; };
+		EA19359C247DC6F900D064EC /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA19359B247DC6F900D064EC /* UsersView.swift */; };
+		EA19359E247DC73000D064EC /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA19359D247DC73000D064EC /* UsersViewModel.swift */; };
+		EA1935A0247DC95C00D064EC /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA19359F247DC95C00D064EC /* UserService.swift */; };
+		EA1935A2247DCFE400D064EC /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1935A1247DCFE400D064EC /* UserView.swift */; };
+		EA1935A4247DD00500D064EC /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1935A3247DD00500D064EC /* UserViewModel.swift */; };
+		EA1935A6247DD98000D064EC /* UserType+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1935A5247DD98000D064EC /* UserType+String.swift */; };
+		EA1935A8247F026900D064EC /* AgentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1935A7247F026900D064EC /* AgentService.swift */; };
+		EA2283C924831738004094D4 /* villes.json in Resources */ = {isa = PBXBuildFile; fileRef = EA2283C824831738004094D4 /* villes.json */; };
+		EA2283CB24831782004094D4 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2283CA24831782004094D4 /* Generator.swift */; };
 		EA376C45247344C10005822C /* AdminHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA376C44247344C10005822C /* AdminHomeView.swift */; };
 		EA376C49247349190005822C /* AgenciesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA376C48247349190005822C /* AgenciesViewModel.swift */; };
 		EA376C4C24734A4D0005822C /* AgenciesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA376C4B24734A4D0005822C /* AgenciesView.swift */; };
 		EAA96E24247332B20001252A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA96E23247332B20001252A /* LoginView.swift */; };
 		EAA96E27247338AC0001252A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA96E26247338AC0001252A /* LoginViewModel.swift */; };
 		EAA96E2A2473393C0001252A /* Binding+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA96E292473393C0001252A /* Binding+Helpers.swift */; };
+		EAC15B802482CC3800F54E6E /* liste_des_prenoms.json in Resources */ = {isa = PBXBuildFile; fileRef = EAC15B7F2482CC3800F54E6E /* liste_des_prenoms.json */; };
 		EAC1B30B2471810900BBC331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC1B30A2471810900BBC331 /* AppDelegate.swift */; };
 		EAC1B30D2471810900BBC331 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC1B30C2471810900BBC331 /* SceneDelegate.swift */; };
 		EAC1B30F2471810900BBC331 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC1B30E2471810900BBC331 /* ContentView.swift */; };
@@ -55,12 +70,27 @@
 		EA19358A247C926500D064EC /* uf.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = uf.entitlements; sourceTree = "<group>"; };
 		EA19358B247D410D00D064EC /* AgencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyService.swift; sourceTree = "<group>"; };
 		EA19358D247D471400D064EC /* Agency+Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Agency+Example.swift"; sourceTree = "<group>"; };
+		EA19358F247D7C4B00D064EC /* Estate+Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Estate+Example.swift"; sourceTree = "<group>"; };
+		EA193591247D920F00D064EC /* AdminService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminService.swift; sourceTree = "<group>"; };
+		EA193593247DA77A00D064EC /* EstateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstateService.swift; sourceTree = "<group>"; };
+		EA193595247DB6FB00D064EC /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		EA193597247DBC6400D064EC /* EstateType+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EstateType+String.swift"; sourceTree = "<group>"; };
+		EA19359B247DC6F900D064EC /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
+		EA19359D247DC73000D064EC /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		EA19359F247DC95C00D064EC /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		EA1935A1247DCFE400D064EC /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		EA1935A3247DD00500D064EC /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		EA1935A5247DD98000D064EC /* UserType+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserType+String.swift"; sourceTree = "<group>"; };
+		EA1935A7247F026900D064EC /* AgentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentService.swift; sourceTree = "<group>"; };
+		EA2283C824831738004094D4 /* villes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = villes.json; sourceTree = "<group>"; };
+		EA2283CA24831782004094D4 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 		EA376C44247344C10005822C /* AdminHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeView.swift; sourceTree = "<group>"; };
 		EA376C48247349190005822C /* AgenciesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgenciesViewModel.swift; sourceTree = "<group>"; };
 		EA376C4B24734A4D0005822C /* AgenciesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgenciesView.swift; sourceTree = "<group>"; };
 		EAA96E23247332B20001252A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EAA96E26247338AC0001252A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		EAA96E292473393C0001252A /* Binding+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Helpers.swift"; sourceTree = "<group>"; };
+		EAC15B7F2482CC3800F54E6E /* liste_des_prenoms.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = liste_des_prenoms.json; sourceTree = "<group>"; };
 		EAC1B3072471810900BBC331 /* uf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC1B30A2471810900BBC331 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAC1B30C2471810900BBC331 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +122,7 @@
 				EA06705D2475CBD500946870 /* EstateListViewModel.swift */,
 				EA06705F2475D26500946870 /* EstateView.swift */,
 				EA0670612475D28000946870 /* EstateViewModel.swift */,
+				EA193593247DA77A00D064EC /* EstateService.swift */,
 			);
 			path = Estate;
 			sourceTree = "<group>";
@@ -101,6 +132,7 @@
 			children = (
 				EA376C44247344C10005822C /* AdminHomeView.swift */,
 				EA193580247C8A1600D064EC /* AdminHomeViewModel.swift */,
+				EA193591247D920F00D064EC /* AdminService.swift */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -110,6 +142,7 @@
 			children = (
 				EA193583247C8B5000D064EC /* AgentHomeView.swift */,
 				EA193585247C8B5C00D064EC /* AgentHomeViewModel.swift */,
+				EA1935A7247F026900D064EC /* AgentService.swift */,
 			);
 			path = Agent;
 			sourceTree = "<group>";
@@ -121,6 +154,28 @@
 				EA193582247C8B4000D064EC /* Agent */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		EA19359A247DC67E00D064EC /* User */ = {
+			isa = PBXGroup;
+			children = (
+				EA19359B247DC6F900D064EC /* UsersView.swift */,
+				EA19359D247DC73000D064EC /* UsersViewModel.swift */,
+				EA1935A1247DCFE400D064EC /* UserView.swift */,
+				EA1935A3247DD00500D064EC /* UserViewModel.swift */,
+				EA19359F247DC95C00D064EC /* UserService.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		EA2283C724831710004094D4 /* Generator */ = {
+			isa = PBXGroup;
+			children = (
+				EAC15B7F2482CC3800F54E6E /* liste_des_prenoms.json */,
+				EA2283C824831738004094D4 /* villes.json */,
+				EA2283CA24831782004094D4 /* Generator.swift */,
+			);
+			path = Generator;
 			sourceTree = "<group>";
 		};
 		EA376C4A247349220005822C /* Agencies */ = {
@@ -151,7 +206,10 @@
 				EAA96E292473393C0001252A /* Binding+Helpers.swift */,
 				EA19357B247C879A00D064EC /* Alamofire+Helpers.swift */,
 				EA19358D247D471400D064EC /* Agency+Example.swift */,
+				EA19358F247D7C4B00D064EC /* Estate+Example.swift */,
 				EA193587247C90AF00D064EC /* User+Example.swift */,
+				EA193597247DBC6400D064EC /* EstateType+String.swift */,
+				EA1935A5247DD98000D064EC /* UserType+String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -177,6 +235,7 @@
 		EAC1B3092471810900BBC331 /* uf */ = {
 			isa = PBXGroup;
 			children = (
+				EA2283C724831710004094D4 /* Generator */,
 				EA19358A247C926500D064EC /* uf.entitlements */,
 				EAA96E282473392D0001252A /* Extensions */,
 				EAC1B3242473065600BBC331 /* Views */,
@@ -203,7 +262,9 @@
 			isa = PBXGroup;
 			children = (
 				EAC1B30E2471810900BBC331 /* ContentView.swift */,
+				EA193595247DB6FB00D064EC /* Cell.swift */,
 				EA193589247C915200D064EC /* Home */,
+				EA19359A247DC67E00D064EC /* User */,
 				EA06705A2475CB3000946870 /* Estate */,
 				EAA96E25247338A00001252A /* Login */,
 				EA376C4A247349220005822C /* Agencies */,
@@ -285,7 +346,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAC1B3172471810D00BBC331 /* LaunchScreen.storyboard in Resources */,
+				EAC15B802482CC3800F54E6E /* liste_des_prenoms.json in Resources */,
 				EAC1B3142471810D00BBC331 /* Preview Assets.xcassets in Resources */,
+				EA2283C924831738004094D4 /* villes.json in Resources */,
 				EAC1B3112471810D00BBC331 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,28 +361,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA193581247C8A1600D064EC /* AdminHomeViewModel.swift in Sources */,
+				EA1935A8247F026900D064EC /* AgentService.swift in Sources */,
 				EA06705C2475CBBE00946870 /* EstateListView.swift in Sources */,
+				EA19359E247DC73000D064EC /* UsersViewModel.swift in Sources */,
 				EAC1B30B2471810900BBC331 /* AppDelegate.swift in Sources */,
+				EA193592247D920F00D064EC /* AdminService.swift in Sources */,
 				EA06705E2475CBD500946870 /* EstateListViewModel.swift in Sources */,
+				EA19359C247DC6F900D064EC /* UsersView.swift in Sources */,
+				EA193594247DA77A00D064EC /* EstateService.swift in Sources */,
 				EA193586247C8B5C00D064EC /* AgentHomeViewModel.swift in Sources */,
 				EA19358E247D471400D064EC /* Agency+Example.swift in Sources */,
 				EA19357C247C879A00D064EC /* Alamofire+Helpers.swift in Sources */,
+				EA193596247DB6FB00D064EC /* Cell.swift in Sources */,
 				EA19357E247C895100D064EC /* ServerConfig.swift in Sources */,
+				EA193590247D7C4B00D064EC /* Estate+Example.swift in Sources */,
 				EA376C45247344C10005822C /* AdminHomeView.swift in Sources */,
 				EA0670592475C83000946870 /* AgencyViewModel.swift in Sources */,
 				EAC1B30D2471810900BBC331 /* SceneDelegate.swift in Sources */,
 				EA376C49247349190005822C /* AgenciesViewModel.swift in Sources */,
+				EA193598247DBC6400D064EC /* EstateType+String.swift in Sources */,
 				EA19358C247D410D00D064EC /* AgencyService.swift in Sources */,
 				EA19357A247C832000D064EC /* LoginService.swift in Sources */,
 				EAA96E24247332B20001252A /* LoginView.swift in Sources */,
+				EA2283CB24831782004094D4 /* Generator.swift in Sources */,
+				EA1935A2247DCFE400D064EC /* UserView.swift in Sources */,
 				EAA96E27247338AC0001252A /* LoginViewModel.swift in Sources */,
 				EA193584247C8B5000D064EC /* AgentHomeView.swift in Sources */,
 				EAC1B30F2471810900BBC331 /* ContentView.swift in Sources */,
 				EA0670622475D28000946870 /* EstateViewModel.swift in Sources */,
 				EAA96E2A2473393C0001252A /* Binding+Helpers.swift in Sources */,
 				EA376C4C24734A4D0005822C /* AgenciesView.swift in Sources */,
+				EA1935A0247DC95C00D064EC /* UserService.swift in Sources */,
 				EA193588247C90AF00D064EC /* User+Example.swift in Sources */,
+				EA1935A4247DD00500D064EC /* UserViewModel.swift in Sources */,
 				EA0670602475D26500946870 /* EstateView.swift in Sources */,
+				EA1935A6247DD98000D064EC /* UserType+String.swift in Sources */,
 				EA0670572475C7EF00946870 /* AgencyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

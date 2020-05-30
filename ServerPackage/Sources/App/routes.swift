@@ -26,9 +26,11 @@ public func routes(_ router: Router) throws {
   
   let userController = UserController()
   router.get("users", use: userController.getUsers)
+  router.post("signUp", use: userController.signUp)
   router.post("user", use: userController.postUser)
   router.delete("user", Int.parameter, use: userController.deleteUser)
   router.get("agency", Int.parameter, "agents", use: userController.getAgentsFromAgency)
+  router.get("agency", Int.parameter, "clients", use: userController.getClientsFromAgency)
   router.post("login", use: userController.login)
 }
 

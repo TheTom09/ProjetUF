@@ -12,29 +12,31 @@ public struct Estate: Codable, Identifiable {
   /// Id du bien
   public var id: Int?
   /// Id de l'agence du bien
-  public let agencyId: Int
+  public var agencyId: Int
   /// Id du client du bien
-  public let clientId: Int
+  public var clientId: Int
   /// Type de la propriété (appart ou maison)
-  public let type: EstateType
+  public var type: EstateType
   /// Surface du bien (50m2)
-  public let surface: Int
+  public var surface: Int
   /// Nombre de pièces (T4)
-  public let rooms: Int
+  public var rooms: Int
   /// Niveau d'étage du bien (3ème étage)
-  public let floor: Int
+  public var floor: Int
   /// Lieu du bien (Aix-en-Provence)
-  public let location: String
+  public var location: String
   /// Liste des dépendances (garage, jardin etc...)
-  public let outbuildings: [EstateOutbuilding]
+  public var outbuildings: [EstateOutbuilding]
   /// Prix minimum du bien
-  public let minimumPrice: Int
+  public var minimumPrice: Int
   /// Prix maximum du bien
-  public let maximumPrice: Int
+  public var maximumPrice: Int
   /// Prix du bien
-  public let price: Int
+  public var price: Int
   /// Frais d'agence
-  public let fees: Int
+  public var fees: Int
+  /// Status du bien
+  public var status: EstateStatus
   
   public init(id: Int?,
               agencyId: Int,
@@ -48,7 +50,8 @@ public struct Estate: Codable, Identifiable {
               minimumPrice: Int,
               maximumPrice: Int,
               price: Int,
-              fees: Int) {
+              fees: Int,
+              status: EstateStatus) {
     self.id = id
     self.agencyId = agencyId
     self.clientId = clientId
@@ -62,18 +65,31 @@ public struct Estate: Codable, Identifiable {
     self.maximumPrice = maximumPrice
     self.price = price
     self.fees = fees
+    self.status = status
   }
 }
 
 /// Représente les types de la propriété
-public enum EstateType: Int, Codable {
+public enum EstateType: Int, Codable, CaseIterable {
   case apartment = 0
   case house = 1
 }
 /// Représente les types des dépendances
-public enum EstateOutbuilding: Int, Codable {
+public enum EstateOutbuilding: Int, Codable, CaseIterable {
   case garden = 0
   case garage = 1
   case basement = 2
+}
+
+/// Représente l'etat du bien
+public enum EstateStatus: Int, Codable, CaseIterable {
+  /// A vendre
+  case forSale = 0
+  /// Vendu
+  case sold = 1
+  /// A louer
+  case forRent = 2
+  /// Loué
+  case rented = 3
 }
 
