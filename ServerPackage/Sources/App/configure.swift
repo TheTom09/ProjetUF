@@ -10,6 +10,7 @@ import Vapor
 import SQLite
 import FluentSQLite
 import Authentication
+import Leaf
 
 /// Called before your application initializes.
 public func configure(_ config: inout Config, _ env: inout Environment, _ services: inout Services) throws {
@@ -25,11 +26,17 @@ public func configure(_ config: inout Config, _ env: inout Environment, _ servic
   
   // Configure the authentication provider
   try services.register(AuthenticationProvider())
+  try services.register(LeafProvider())
+  config.prefer(LeafRenderer.self, for: ViewRenderer.self)
   
   /// Register routes to the router
    let router = EngineRouter.default()
    try routes(router)
    services.register(router, as: Router.self)
+  
+  var middlewareConfig = MiddlewareConfig()
+  middlewareConfig.use(FileMiddleware.self)
+  services.register(middlewareConfig)
   
   var migration = MigrationConfig()
   migration.add(model: Agency.self, database: .sqlite)

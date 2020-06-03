@@ -32,5 +32,7 @@ public func routes(_ router: Router) throws {
   router.get("agency", Int.parameter, "agents", use: userController.getAgentsFromAgency)
   router.get("agency", Int.parameter, "clients", use: userController.getClientsFromAgency)
   router.post("login", use: userController.login)
+  router.get("web/login", use: userController.loginWebView)
+  router.post("web/login", use: userController.loginWebView)
 }
 

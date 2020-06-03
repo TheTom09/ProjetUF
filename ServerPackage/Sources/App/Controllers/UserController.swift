@@ -73,4 +73,16 @@ struct UserController {
         .unwrap(or: Abort(.badRequest))
     }
   }
+  
+  func loginWebView(req: Request) throws -> Future<View> {
+    if req.http.method == .POST {
+      return try self.login(req: req).flatMap { user in
+        return try req.view().render("login", ["userName": user.name])
+      }.catchFlatMap { _ in
+        return try req.view().render("login", ["error": true])
+      }
+    } else {
+      return try req.view().render("login")
+    }
+  }
 }

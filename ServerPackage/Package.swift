@@ -16,6 +16,7 @@ let package = Package(
         .package(name: "SQLite", url: "https://github.com/vapor/sqlite.git", from: "3.0.0"),
         .package(name: "Auth", url: "https://github.com/vapor/auth.git", from: "2.0.4"),
         .package(name: "FluentSQLite", url: "https://github.com/vapor/fluent-sqlite.git", from: "3.0.0"),
+        .package(name: "Leaf", url: "https://github.com/vapor/leaf.git", from: "3.0.0"),
         .package(path: "../Package")
     ],
     targets: [
@@ -25,6 +26,7 @@ let package = Package(
         "Vapor",
         "SQLite",
         "FluentSQLite",
+        "Leaf",
         .product(name: "Authentication", package: "Auth"),
         .product(name: "Model", package: "Package")
         ]),

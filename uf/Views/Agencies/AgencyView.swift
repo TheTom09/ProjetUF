@@ -16,7 +16,7 @@ struct AgencyView: View {
     Form {
       Section {
         if self.viewModel.agency.id != nil {
-          IntCell(title: "ID de de l'agence", value: .keyPath(\.agency.id, on: self.viewModel), editable: false)
+          IntCell(title: "ID de l'agence", value: .keyPath(\.agency.id, on: self.viewModel), editable: false)
         }
         TextCell(title: "Localisation de l'agence", value: .keyPath(\.agency.location, on: self.viewModel), editable: self.viewModel.isEditable)
         TextCell(title: "Nom de l'agence", value: .keyPath(\.agency.name, on: self.viewModel), editable: self.viewModel.isEditable)
